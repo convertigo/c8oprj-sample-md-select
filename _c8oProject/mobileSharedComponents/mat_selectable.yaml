@@ -1,0 +1,290 @@
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        '/*Begin_c8o_CompImport*/
+        /*End_c8o_CompImport*/
+        /*Begin_c8o_CompDeclaration*/
+        	public filtered_data: Array<any>;
+        	public search_value: any;
+        	/*End_c8o_CompDeclaration*/
+        /*Begin_c8o_CompConstructor*/
+        		/*End_c8o_CompConstructor*/
+        /*Begin_c8o_CompInitialization*/
+        		/*End_c8o_CompInitialization*/
+        /*Begin_c8o_CompFinalization*/
+        		/*End_c8o_CompFinalization*/
+        /*Begin_c8o_CompChanges*/
+        		/*End_c8o_CompChanges*/
+        /*Begin_c8o_CompDoCheck*/
+        		/*End_c8o_CompDoCheck*/
+        /*Begin_c8o_CompAfterContentInit*/
+        		/*End_c8o_CompAfterContentInit*/
+        /*Begin_c8o_CompAfterContentChecked*/
+        		/*End_c8o_CompAfterContentChecked*/
+        /*Begin_c8o_CompAfterViewInit*/
+        		/*End_c8o_CompAfterViewInit*/
+        /*Begin_c8o_CompAfterViewChecked*/
+        		/*End_c8o_CompAfterViewChecked*/
+        /*Begin_c8o_CompFunction*/
+        	onKey(e){
+        		let filter = e.target.value.toLowerCase();
+        		//console.log(''filter: '' + filter);
+        		//e.preventDefault();
+        		//e.stopPropagation();
+        		this.filtered_data = JSON.parse(JSON.stringify(this.select_data)).filter((d) => {
+        			return d.toLowerCase().indexOf(filter) != -1
+        		});
+        	}
+        	/*End_c8o_CompFunction*/
+        '
+↓SharedComponent_Event [ngx.components.UISharedComponentEvent-1687503631632]: 
+  ↓init_selectable [ngx.components.UICustomAction-1687503677040]: 
+    actionValue: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+        - com.twinsoft.convertigo.beans.common.FormatedContent: 
+          →: |
+            '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+            		this[''filtered_data''] = this[''select_data''].slice();
+            		resolve();
+            '
+    module_ng_imports: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+            - com.twinsoft.convertigo.beans.common.XMLVector: 
+              - java.lang.String: 
+                - ↑value: MatSelectModule
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+            - com.twinsoft.convertigo.beans.common.XMLVector: 
+              - java.lang.String: 
+                - ↑value: MatInputModule
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+            - com.twinsoft.convertigo.beans.common.XMLVector: 
+              - java.lang.String: 
+                - ↑value: MatFormFieldModule
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+            - com.twinsoft.convertigo.beans.common.XMLVector: 
+              - java.lang.String: 
+                - ↑value: MatIconModule
+    module_ts_imports: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+            - com.twinsoft.convertigo.beans.common.XMLVector: 
+              - java.lang.String: 
+                - ↑value: MatSelectModule
+              - java.lang.String: 
+                - ↑value: '@angular/material/select'
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+            - com.twinsoft.convertigo.beans.common.XMLVector: 
+              - java.lang.String: 
+                - ↑value: MatInputModule
+              - java.lang.String: 
+                - ↑value: '@angular/material/input'
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+            - com.twinsoft.convertigo.beans.common.XMLVector: 
+              - java.lang.String: 
+                - ↑value: MatFormFieldModule
+              - java.lang.String: 
+                - ↑value: '@angular/material/form-field'
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+            - com.twinsoft.convertigo.beans.common.XMLVector: 
+              - java.lang.String: 
+                - ↑value: MatIconModule
+              - java.lang.String: 
+                - ↑value: '@angular/material/icon'
+    package_dependencies: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+            - com.twinsoft.convertigo.beans.common.XMLVector: 
+              - java.lang.String: 
+                - ↑value: '@angular/material'
+              - java.lang.String: 
+                - ↑value: 14.2.7
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+            - com.twinsoft.convertigo.beans.common.XMLVector: 
+              - java.lang.String: 
+                - ↑value: '@angular/cdk'
+              - java.lang.String: 
+                - ↑value: 14.2.7
+↓mat_form_field [ngx.components.UIElement-1687504787736]: 
+  tagName: mat-form-field
+  ↓tag [ngx.components.UIElement-1687514008451]: 
+    tagName: mat-label
+    ↓pokemon [ngx.components.UIText-1687514079890]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: source:{"filter":"Shared","project":"mat_select_search","input":"","model":{"data":[{"priority":1687503601666,"regular":true}],"path":"?.select_label","prefix":"","suffix":"","custom":"","useCustom":false}}
+  ↓mat_select [ngx.components.UIElement-1687771854655]: 
+    tagName: mat-select
+    ↓tag1 [ngx.components.UIElement-1687772256598]: 
+      tagName: mat-form-field
+      ↓tag [ngx.components.UIElement-1687772256601]: 
+        tagName: mat-label
+        ↓some_text [ngx.components.UIText-1687772256604]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: source:{"filter":"Shared","project":"mat_select_search","input":"","model":{"data":[{"priority":1687503601666,"regular":true}],"path":"?.search_label","prefix":"","suffix":"","custom":"","useCustom":false}}
+      ↓tag1 [ngx.components.UIElement-1687772256607]: 
+        selfClose: true
+        tagName: input
+        ↓attr [ngx.components.UIAttribute-1687772256610]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:matInput
+        ↓attr1 [ngx.components.UIAttribute-1687772256613]: 
+          attrName: type
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:text
+        ↓__value__ [ngx.components.UIAttribute-1687772256616]: 
+          attrName: '[(ngModel)]'
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:this.search_value
+        ↓attr2 [ngx.components.UIAttribute-1687772256619]: 
+          attrName: (keyup)
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:onKey($event);
+        ↓Style [ngx.components.UIStyle-1687784490147]: 
+          styleContent: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+              - com.twinsoft.convertigo.beans.common.FormatedContent: 
+                →: |
+                  '	color: #000;
+                  '
+      ↓attr [ngx.components.UIAttribute-1687772256622]: 
+        attrName: appearance
+        attrValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:fill
+      ↓Style [ngx.components.UIStyle-1687772256625]: 
+        styleContent: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+            - com.twinsoft.convertigo.beans.common.FormatedContent: 
+              →: |
+                '	width: 100%;
+                '
+      ↓button [ngx.components.UIElement-1687784950518]: 
+        tagName: button
+        ↓attr [ngx.components.UIAttribute-1687784966603]: 
+          attrName: '*ngIf'
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:this.search_value
+        ↓matSuffix [ngx.components.UIAttribute-1687785250373]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:matSuffix
+        ↓click [ngx.components.UIAttribute-1687785290781]: 
+          attrName: (click)
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:this.search_value='';this.filtered_data=this.select_data
+        ↓aria_label [ngx.components.UIAttribute-1687785340625]: 
+          attrName: aria-label
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:Clear
+        ↓maticon [ngx.components.UIAttribute-1687785652639]: 
+          attrName: 
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:mat-icon-button
+        ↓mat_icon [ngx.components.UIElement-1687785714591]: 
+          tagName: mat-icon
+          ↓fontIcon [ngx.components.UIAttribute-1687786383217]: 
+            attrName: fontIcon
+            attrValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:close
+            isEnabled: false
+          ↓close [ngx.components.UIText-1687788206009]: 
+            textValue: 
+              - xmlizable: 
+                - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                - MobileSmartSourceType: plain:close
+    ↓tag [ngx.components.UIControlDirective-1687771896750]: 
+      directiveItemName: option
+      directiveSource: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:this.filtered_data
+      ↓mat_option [ngx.components.UIElement-1687771919604]: 
+        tagName: mat-option
+        ↓attr [ngx.components.UIAttribute-1687771943306]: 
+          attrName: '[value]'
+          attrValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:option
+        ↓state [ngx.components.UIText-1687771976558]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: script:option
+    ↓attr [ngx.components.UIAttribute-1687772033955]: 
+      attrName: 
+      attrValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:multiple
+    ↓attr1 [ngx.components.UIAttribute-1687772144379]: 
+      attrName: '[(value)]'
+      attrValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:this.global[this.select_output]
+  ↓appearance [ngx.components.UIAttribute-1687525915299]: 
+    attrName: appearance
+    attrValue: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+        - MobileSmartSourceType: plain:fill
+  ↓Style [ngx.components.UIStyle-1687784107948]: 
+    styleContent: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+        - com.twinsoft.convertigo.beans.common.FormatedContent: 
+          →: |
+            '	width: 95%;
+            '
+↓select_label [ngx.components.UICompVariable-1687775959316]: 
+↓search_label [ngx.components.UICompVariable-1687776036361]: 
+↓select_data [ngx.components.UICompVariable-1687776139463]: 
+↓select_output [ngx.components.UICompVariable-1687781642410]: 

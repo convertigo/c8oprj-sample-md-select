@@ -64,7 +64,9 @@ componentScriptContent:
         '
 tplProjectName: mobilebuilder_tpl_8_1_0_ngx
 ↓Menu [ngx.components.UIDynamicMenu-1500890597895]: 🗏 mobileMenus/Menu.yaml
+↓mat_selectable [ngx.components.UISharedRegularComponent-1687503601666]: 🗏 mobileSharedComponents/mat_selectable.yaml
 ↓Page [ngx.components.PageComponent-1500538678074]: 🗏 mobilePages/Page.yaml
+↓Page1 [ngx.components.PageComponent-1687503540706]: 🗏 mobilePages/Page1.yaml
 ↓Style [ngx.components.UIStyle-1491635462437]: 
   comment: You can add some global application styles here
   styleContent: 
@@ -280,7 +282,7 @@ tplProjectName: mobilebuilder_tpl_8_1_0_ngx
       - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
       - com.twinsoft.convertigo.beans.common.FormatedContent: 
         →: |
-          '@media (prefers-color-scheme: dark) {
+          '@media (prefers-color-scheme: light) {
             /*
              * Dark Colors
              * -------------------------------------------
@@ -434,15 +436,11 @@ tplProjectName: mobilebuilder_tpl_8_1_0_ngx
               --color: white;
             }
           }'
-↓Theme [ngx.components.UITheme-1662391887092]: 
+↓Theme_MD [ngx.components.UITheme-1662391887092]: 
   styleContent: 
     - xmlizable: 
       - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
       - com.twinsoft.convertigo.beans.common.FormatedContent: 
         →: |
-          // Ionic Variables and Theming. For more info, please see:
-          // http://ionicframework.com/docs/theming/
-          
-          /** Ionic CSS Variables **/
-          
-          
+          '@import ''@angular/material/prebuilt-themes/indigo-pink.css'';
+          @import ''https://fonts.googleapis.com/icon?family=Material+Icons'';'

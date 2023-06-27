@@ -1,0 +1,185 @@
+↑isRoot: true
+comment: My First Page as root page
+preloadPriority: high
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        /*Begin_c8o_PageImport*/
+        /*End_c8o_PageImport*/
+        /*Begin_c8o_PageDeclaration*/
+        	/*End_c8o_PageDeclaration*/
+        /*Begin_c8o_PageConstructor*/
+        		/*End_c8o_PageConstructor*/
+        /*Begin_c8o_PageFunction*/
+        	/*End_c8o_PageFunction*/
+        
+segment: path-to-page1
+title: Title for Page1
+↓Header [ngx.components.UIDynamicElement-1687503540709]: 
+  beanData: '{"ionBean":"Header"}'
+  comment: Page header
+  tagName: ion-header
+  ↓ToolBar [ngx.components.UIDynamicElement-1687503540712]: 
+    beanData: '{"ionBean":"ToolBar"}'
+    tagName: ion-toolbar
+    ↓ButtonSet1 [ngx.components.UIDynamicElement-1687503540715]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:start"}'
+      tagName: ion-buttons
+      ↓BackButton [ngx.components.UIDynamicElement-1687503540718]: 
+        beanData: '{"ionBean":"BackButton"}'
+        tagName: ion-back-button
+      ↓MenuButton [ngx.components.UIDynamicElement-1687503540721]: 
+        beanData: '{"ionBean":"MenuButton"}'
+        tagName: ion-menu-button
+    ↓BarTitle [ngx.components.UIDynamicElement-1687503540724]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [ngx.components.UIText-1687503540727]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:Material Design SELECT
+    ↓ButtonSet2 [ngx.components.UIDynamicElement-1687503540730]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:end"}'
+      tagName: ion-buttons
+      ↓Button [ngx.components.UIDynamicElement-1687503540733]: 
+        beanData: '{"ionBean":"Button"}'
+        tagName: ion-button
+        ↓Icon [ngx.components.UIDynamicElement-1687503540736]: 
+          beanData: |
+            '{
+             "ionBean": "Icon",
+             "IconName": "plain:ellipsis-vertical",
+             "IconMdName": "plain",
+             "IconIosName": "plain"
+            }'
+          tagName: ion-icon
+↓Content [ngx.components.UIDynamicElement-1687503540739]: 
+  beanData: '{"ionBean":"Content"}'
+  comment: Page content
+  tagName: ion-content
+  ↓Div [ngx.components.UIDynamicElement-1687782646496]: 
+    beanData: '{"ionBean":"DivTag"}'
+    tagName: div
+    ↓tag [ngx.components.UIUseShared-1687504252957]: 
+      sharedcomponent: mat_select_search.Application.NgxApp.mat_selectable
+      ↓select_label [ngx.components.UIUseVariable-1687775976361]: 
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:'States'
+      ↓search_label [ngx.components.UIUseVariable-1687776066764]: 
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:'Rechercher'
+      ↓select_data [ngx.components.UIUseVariable-1687776292805]: 
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: source:{"filter":"Local","project":"mat_select_search","input":"","model":{"data":[{"localObject":"local"}],"path":"?.states","prefix":"","suffix":"","custom":"","useCustom":false}}
+      ↓select_output [ngx.components.UIUseVariable-1687781664467]: 
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:'states_output'
+    ↓Paragraph [ngx.components.UIDynamicElement-1687526158293]: 
+      beanData: '{"ionBean":"Paragraph"}'
+      tagName: p
+      ↓some_text1 [ngx.components.UIText-1687526290337]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: 'plain:You selected: '
+      ↓some_text [ngx.components.UIText-1687526158292]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:this.global?.states_output
+  ↓Div1 [ngx.components.UIDynamicElement-1687782657857]: 
+    beanData: '{"ionBean":"DivTag"}'
+    tagName: div
+    ↓tag [ngx.components.UIUseShared-1687782657860]: 
+      sharedcomponent: mat_select_search.Application.NgxApp.mat_selectable
+      ↓select_label [ngx.components.UIUseVariable-1687782657863]: 
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:'Favorite pets'
+      ↓search_label [ngx.components.UIUseVariable-1687782657866]: 
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:'Find it!'
+      ↓select_data [ngx.components.UIUseVariable-1687782657869]: 
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: source:{"filter":"Local","project":"mat_select_search","input":"","model":{"data":[{"localObject":"local"}],"path":"?.animals","prefix":"","suffix":"","custom":"","useCustom":false}}
+      ↓select_output [ngx.components.UIUseVariable-1687782657872]: 
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:'out_animal'
+    ↓Paragraph [ngx.components.UIDynamicElement-1687782657875]: 
+      beanData: '{"ionBean":"Paragraph"}'
+      tagName: p
+      ↓some_text1 [ngx.components.UIText-1687782657878]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: 'plain:You selected: '
+      ↓some_text [ngx.components.UIText-1687782657881]: 
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:this.global?.out_animal
+↓Footer [ngx.components.UIDynamicElement-1687503540769]: 
+  beanData: '{"ionBean":"Footer"}'
+  comment: Page footer
+  tagName: ion-footer
+  ↓ToolBar [ngx.components.UIDynamicElement-1687503540772]: 
+    beanData: '{"ionBean":"ToolBar"}'
+    tagName: ion-toolbar
+    ↓ButtonSet [ngx.components.UIDynamicElement-1687503540775]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:start"}'
+      tagName: ion-buttons
+      ↓Button1 [ngx.components.UIDynamicElement-1687503540778]: 
+        beanData: '{"ionBean":"Button"}'
+        tagName: ion-button
+        ↓Text [ngx.components.UIText-1687503540781]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:Action 1
+    ↓ButtonSet1 [ngx.components.UIDynamicElement-1687503540784]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:end"}'
+      tagName: ion-buttons
+      ↓Button2 [ngx.components.UIDynamicElement-1687503540787]: 
+        beanData: '{"ionBean":"Button"}'
+        tagName: ion-button
+        ↓Text [ngx.components.UIText-1687503540790]: 
+          textValue: 
+            - xmlizable: 
+              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+              - MobileSmartSourceType: plain:Action 2
+↓PageEvent [ngx.components.UIPageEvent-1687776383634]: 
+  viewEvent: onWillLoad
+  ↓SetLocal [ngx.components.UIDynamicAction-1687776403981]: 
+    beanData: |
+      '{
+       "ionBean": "SetLocalAction",
+       "Property": "plain:states",
+       "Value": "script:[\r\n    ''Alabama'',\r\n    ''Alaska'',\r\n    ''Arizona'',\r\n    ''Arkansas'',\r\n    ''California'',\r\n    ''Colorado'',\r\n    ''Connecticut'',\r\n    ''Delaware'',\r\n    ''Florida'',\r\n    ''Georgia'',\r\n    ''Hawaii'',\r\n    ''Idaho'',\r\n    ''Illinois'',\r\n    ''Indiana'',\r\n    ''Iowa'',\r\n    ''Kansas'',\r\n    ''Kentucky'',\r\n    ''Louisiana'',\r\n    ''Maine'',\r\n    ''Maryland'',\r\n    ''Massachusetts'',\r\n    ''Michigan'',\r\n    ''Minnesota'',\r\n    ''Mississippi'',\r\n    ''Missouri'',\r\n    ''Montana'',\r\n    ''Nebraska'',\r\n    ''Nevada'',\r\n    ''New Hampshire'',\r\n    ''New Jersey'',\r\n    ''New Mexico'',\r\n    ''New York'',\r\n    ''North Carolina'',\r\n    ''North Dakota'',\r\n    ''Ohio'',\r\n    ''Oklahoma'',\r\n    ''Oregon'',\r\n    ''Pennsylvania'',\r\n    ''Rhode Island'',\r\n    ''South Carolina'',\r\n    ''South Dakota'',\r\n    ''Tennessee'',\r\n    ''Texas'',\r\n    ''Utah'',\r\n    ''Vermont'',\r\n    ''Virginia'',\r\n    ''Washington'',\r\n    ''West Virginia'',\r\n    ''Wisconsin'',\r\n    ''Wyoming'',\r\n  ]"
+      }'
+    tagName: SetLocal
+  ↓SetLocal1 [ngx.components.UIDynamicAction-1687782825158]: 
+    beanData: |
+      '{
+       "ionBean": "SetLocalAction",
+       "Property": "plain:animals",
+       "Value": "script:[\r\n    ''Cat'',\r\n    ''Dog'',\r\n    ''Guinea Pig'',\r\n    ''Rabbit'',\r\n    ''Snake''\r\n  ]"
+      }'
+    tagName: SetLocal
