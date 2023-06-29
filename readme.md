@@ -3,7 +3,7 @@
 
 # mat_select_search
 
-Convertigo NGX builder Project
+How to use Material Design Select with a Search Component
 
 
 For more technical informations : [documentation](./project.md)
@@ -30,13 +30,13 @@ For more technical informations : [documentation](./project.md)
      <tr><td>To contribute</td><td>
 
      ```
-     mat_select_search=C:/Convertigo/Studio 8.2.1/workspace/mat_select_search/.git:branch=master
+     mat_select_search=https://github.com/convertigo/c8oprj-sample-md-select.git:branch=master
      ```
      </td></tr>
      <tr><td>To simply use</td><td>
 
      ```
-     mat_select_search=C:/Convertigo/Studio 8.2.1/workspace/mat_select_search//archive/master.zip
+     mat_select_search=https://github.com/convertigo/c8oprj-sample-md-select/archive/master.zip
      ```
      </td></tr>
     </table>

@@ -1,7 +1,8 @@
 ↑convertigo: 8.1.0.m006
 ↓mat_select_search [core.Project]: 
-  comment: Convertigo NGX builder Project
+  comment: How to use Material Design Select with a Search Component
   corsOrigin: =Origin
+  version: 1.0
   ↓void [connectors.SqlConnector]: 🗏 connectors/void.yaml
   ↓Project_reference [references.ProjectSchemaReference]: 
     comment: ngx builder template
